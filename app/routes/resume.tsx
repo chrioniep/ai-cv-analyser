@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router";
 import ATS from "~/components/ATS";
-import Deatils from "~/components/Deatils";
+import Details from "~/components/Details";
 import Summary from "~/components/Summary";
 import { usePuterStore } from "~/lib/puter";
 
@@ -90,7 +90,7 @@ const Resume = () => {
                 score={feedback.ATS.score || 0}
                 suggestions={feedback.ATS.tips || []}
               />
-              <Deatils feedback={feedback} />
+              <Details feedback={feedback} />
             </div>
           ) : (
             <img
